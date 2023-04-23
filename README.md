@@ -1,24 +1,24 @@
 ## Introduction
 
 
-<b>Discipline | <b>Fill your discipline name here
+<b>Discipline | <b>Chemistry
 :--|:--|
-<b> Lab | <b> Fill your lab name here
-<b> Experiment|     <b> Fill your experiment name and number here
+<b> Lab | <b> Fluid Mechanics
+<b> Experiment|     <b> Determination of metacentric height
 
 ### About the Experiment 
 
-Fill a brief description of this experiment here
+To determine experimentally the metacentric height of a flat bottomed pontoon.
 
-<b>Name of Developer | <b> Fill the name of experiment owner here 
+<b>Name of Developer | <b> Dr. Neha Sharma
 :--|:--|
-<b> Institute | <b>  
+<b> Institute | <b>  Meerut Institute of Engineering and Technology, Meerut
 <b> Email id|     <b>  
-<b> Department |  
+<b> Department |  Chemistry
 
 ### Contributors List
 
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
-1 | . | . | . | . | .
+1 | Atul Pratap | Student | Computer science | MIET | pratapsinghatul111@gmail.com
 2 | . | . | . | . | .
