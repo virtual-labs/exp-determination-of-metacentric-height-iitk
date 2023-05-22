@@ -1,190 +1,80 @@
-## README
+This folder has 
 
-## Quiz
-### 1. Introduction
-This part of the experiment is specifically for assessment purposes. This allows for the creation of a quiz with multiple choice single answer questions.  
-These can be
-* Pretest - Pre requisite quizzes
-* Posttest - Testing the learning
-* Learning Unit Quizzes - Quizzes to test the section's learning.
-The format for the same is discussed below.
+### Aim: 
 
-### 2. Target Audience
-This guide is meant for anyone creating a virtual lab and wanting to have a quiz section.
+To determine experimentally the metacentric height of a flat bottomed pontoon.
 
-### 3. Structure of quiz
-The data for the quiz needs to be added to a json file pertaining the following specifications.
-1. The quiz needs to have an array of objects, each object representing a question. As shown below
-```
-"questions" : [
-    {
-        "question" : "What is 1+2 ?",
-        "answers" : 
-        {
-            "a" : 1,
-            "b" : 2,
-            "c" : 3,
-            "d" : 4
-        },
-        "correctAnswer" : c
-    }
-]
-```
-### 4. Quiz V2.0 (Enhancements done)
-The new format of quiz has multiple new additions. The details for which have been described below.  
-The format of json would be as linked [here](./pretest.json)  
-
-First we will look at the additional fields added  
-
-### 4.1 Fields 
-* Mandatory Fields
-    * [version](#42-version) - Without which the enhanced quiz will not be rendered. 
-    * [levels](#44-levels) -  Adds difficulty level to each question (Allows for filtering)
-
-* Optional Fields
-    * [explanations](#43-explanations) - Adds an explanation to each answer. If wrong answer is choosen, only it's explanation pops up.  If correct answer is choosen, all available explanations pop up.  
-
-### 4.2 Version
-The very first field is absolutely necessary. This ensures that the quiz supports the new features.
-```
-"version": 2.0
-```   
-
-### 4.3 Explanations
-Just like we mention answers, we can have a section for explanation so that they show up after an answer is marked. This is optional and can completely be left out. The three ways of defining (Assuming there are 4 answers a, b, c, d):
-
-1. All answers have explanations
-```
-"explanations": {
-    "a" : "Explanation 1,
-    "b" : "Explanation 2"
-    "c" : "Explanation 3"
-    "d" : "Explanation 4"
-},
-```  
-2. Some answers have explanations
-```
-"explanations": {
-    "a" : "Explanation 1,
-    "d" : "Explanation 4"
-},
-```
-
-3. No answers have explanations
-```
-/* Can be excluded from json */
-```  
+### THEORY
 
 
-### 4.4 Levels
-Adds an ability to filter questions based on difficulty levels. This is mandatory and has to be mentioned for each question.  
-The three available difficulty levels are:
-```
-['beginner', 'intermediate', 'advanced']
-```
-Using any other will not work. The format for the same:
-```
-"difficulty" : "beginner"
-```
+This experiment is based on the Archimedes principle. Archimedes’ principle is a law of physics fundamental to fluid dynamics. 
+“It states that the upward buoyant force exerted on a body immersed in a fluid, whether wholly or partially submerged, is equal to the weight of the fluid that the body displaces and acts in the upward direction at the center of mass of the displaced fluid.”
+If the weight of the fluid displaced is less than the weight of the object, the object will sink. The object will float if the weight of the fluid displaced is equal to the weight of the object. This upward force is known as thrust or buoyant force. It is a consequence of the difference in pressure the fluid exerts at different heights. The fluid pressure is exerted in all directions (Pascal’s principle) and increases with depth. There is an unbalanced upward force on the bottom of a submerged object.
+Archimedes’ principle tells us that this loss of weight is equal to the weight of the fluid, wholly or partially, displaced by the object. The corresponding equation is given by,
+Fb = ρ × g × V
+Where,
 
-### 5. Tips
-1. An extra functionality of explanation is the ability to add an Rich Text (HTML Formatted). It will work just like in html.  
-This could be used for
-    a. Adding hyper links
-    b. Formatting text etc.
-```
-"explanations": {
-    "a" : "Explanation 1  <a href='www.google.com'>here</a>",
-    "b" : "Explanation 2"
-},
-```
-> This can be done in either of explanation, answer and the question.
-An example for the same can be found here: source | website
+Fb is the buoyant force (or thrust)
+ρ is the density of the fluid in which the object is immersed
+V is the volume of the object that is submerged in the fluid
+g is the acceleration due to gravity
 
-2. Multi Correct
-To mimic the functionality of multi correct questions, one can add options as part of the question itself, and the actual answer options can be like : 
-```
-    "answers" : 
-    {
-        "a" : "both i and ii",
-        "b" : "All i, ii, iii, iv",
-        "c" : "Only i",
-        "d" : "None of the above"
-    }
-```
-An example for the same can be found here: source | website
 
-3. Image Support  
-You can add images to both question and answers, there can be multiple cases of the same. The following examples can be followed.  
-* **Image in question** : Add img tag in question.
-```
-"questions" : [
-    {
-        "question" : "<img src="./images/example.png" alt="question image">",
-        "answers" : 
-        {
-            "a" : 1,
-            "b" : 2,
-            "c" : 3,
-            "d" : 4
-        },
-        "correctAnswer" : c
-    }
-]
-```  
+Buoyancy: When a body is immersed in a fluid either wholly of partially, it is buoyed or lifted up by a force, which is equal to the weight of fluid displaced by the body.
 
-* **Image and Text in question** : Add br tag and img tag in question after text. 
-```
-"questions" : [
-    {
-        "question" : "This is an example question <br><img src="./images/example.png" alt="question image">",
-        "answers" : 
-        {
-            "a" : 1,
-            "b" : 2,
-            "c" : 3,
-            "d" : 4
-        },
-        "correctAnswer" : c
-    }
-]
-```  
-> The same two cases apply for answers too.
-**Make sure the image aspect ratio remains constant and good to maintain the structure**
+Centre of Buoyancy: The point of application of the force of buoyancy on the body is known as the centre of buoyancy. It is always the centre of gravity of the volume of fluid displaced.
 
-### 6. Manual Validation of Quiz Json (wrt version 2.0)
-This is till the automatic validation is set up.
-* The first field has to be version with 2 or 2.0 as value.
-* The questions needs to be an array of objects containing questions.
-* Each question object should hav a question field, answers field, difficulty field and correctAnswer field.
-    * question : Should be a string
-    * answer : Should be an object containing options, and each option should be a string.
-    * difficulty : should be a string and should have values from ["beginner", "intermerdiate", "advanced"]
-    * correctAnswer : Should be a string and it's value should be present in keys of one of the answer.
-* If explanation is present it has to be an object and needs to follow the description of answer object.  
+Metacentre: Figure shows a body floating in a liquid in a state of equilibrium. When it is given a small angular displacement, it starts oscillating about some point M. This point, about which the body oscillating, it is called metacentre. 
 
-### 7. Test Cases
-- [x] Using the mentioned quiz format  
-- [x] Using the old quiz json format
-- [ ] Not including the version in json
-- [ ] Including incorrect version in json 
-- [ ] Including correct version but following old format 
-- [x] Difficulty not mentioned
-- [x] Incorrect difficulty level mentioned
-- [x] explanation not provided for all options
-- [x] explanation empty
-- [x] explanation object not defined
-- [x] HTML in quuestion (tags like hyper links, bold etc)
-- [x] HTML in answer (tags like hyper links, bold etc)
-- [x] HTML in explanation (tags like hyper links, bold etc)
-- [x] On wrong annswer only wrong answer is colored red
-- [x] On correct answer all red color resets
-- [x] Combination of filters working properly
-- [x] If all questions have same difficulty, filter option should be hidden.
-- [x] When questions are answered after filtering, marks should be counted out of filtewred questions, not total.
-- [x] On wrong answer only explanation of wrong answer is shown
-- [x] On correct answer all available explanations are shown
+The metacentre may also be defined as a point of intersection of the axis of body passing through centre of gravity G and original centre of buoyancy B and a vertical line passing through the centre of buoyancy B1 of the tilled position of the body. 
 
-### 8. TODO
-* Add automatic schema validation
-* Link to source files implementing the above tips.
+<img src="images/pic.png"/>
+
+## Applications of this experiment are:
+
+•	A ship or a boat can float on water because the weight of the displaced water is equal to the weight of the ship or boat.
+•	A submarine can dive into the water or can float on it. A submarine consists of ballast tanks that are filled with air or water. The tanks weigh less than an equal volume of water and make the sub float on the surface. If the tanks are partly filled with air, it is possible to make the submarine float at some depth of the water without either rising or sinking.
+•	Hot air balloons rise into the air because the density of the warmer air inside the balloon is less dense than the colder air outside. The basic principle of hot air balloon is the use of hot air to create buoyancy, which generates lift.
+•	Water striders can float on the water since its legs expel water, and the weight of the expelled water is equal to the floating force.
+
+
+
+
+### Determination of Metacentric Height
+A known weight W1 is shifted by a distance Z across the axis of tilt. The change in momentum due to this shift is W1 Z. Let the angle of tilt be θ. The change in moment due to this tilt is equal to (Wc + W1) GM tanθ.
+
+<img src="images/height.png"/>
+
+Wc = weight of the vessel<br>
+W1 = weight of unbalanced mass<br>
+Z = distance of the unbalanced mass from the centre of the cross bar.<br>
+
+<img src="images/res.png"/>
+
+## EXPERIMENTAL SET UP:
+
+The experimental set up consists of a pontoon (flat bottomed vessel) which is allowed of float in a M.S. tank. The weight of the vessel is kept fix here. By means of a pendulum (consisting of a weight suspended to a longer pointer), the angle of tilt θ can be measured on a graduated arc. For tilting the ship model a cross bar with four movable hangers is fixed on the model. Pendulum and graduated arc are suitably fixed at the centre of the cross bar.
+
+### PROCEDURE
+
+1.	The relevant dimensions as area of collecting tank, mass density of water etc are provided in the data table.
+2.	The water level in the tank when pontoon is not in the tank are provided in the data table.
+
+3.	Pontoon is allowed to float in the tank. The reading of water level in the tank is recorded in table.
+
+4. Mass of pontoon can be obtained by the help of Archimedes’s principle.
+5.	Position of unbalanced mass, weight of unbalanced mass and the angle of heel can be noted down
+6. Calculate the metacentric height of the pontoon.
+7. The procedure is repeated for other positions of the unbalanced mass.
+
+
+
+### RESULTS
+
+The metacentric height of a flat bottom pontoon =
+
+### PRECAUTIONS
+
+1.	Apparatus should be in leveled conditions.
+2.	Reading must be taken in steady condition of water.
+3.	Unbalanced mass should be measured by taking care that water disturbance should be minimum.
