@@ -5,8 +5,7 @@
 <b>Discipline | <b>Chemical Engineering
 :--|:--|
 <b> Lab | <b> Chemical Engineering Fluid Mechanics Lab
-<b>Discipline | <b>Chemistry
-<b> Lab | <b> Fluid Mechanics
+<b> Experiment|     <b> Determination of metacentric height
 
 ### About the Experiment 
 
