@@ -24,4 +24,3 @@ SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
 1 |Satyam Sangwan |Student | CSE(AI/ML)| Meerut Institute of Engineering and Technology, Meerut |sangwanmadhu2003@gmail.com
 
-
