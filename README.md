@@ -8,7 +8,7 @@
 
 ### About the Experiment 
 
-Fill a brief description of this experiment here
+To determine experimentally the metacentric height of a flat bottomed pontoon.
 
 <b>Name of Developer | <b> Dr. Neha Sharma 
 :--|:--|
