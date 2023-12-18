@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiment Metacentric-height </title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <center> <h2>
+      Experiment : Determination-of-metacentric-height
+    </h2></center>
+<div class="struct">
+  <img src="images/Lab-2.3.png" alt="" width="730" class="initial">
+  <h3 class="y1">Pontoon</h3>
+  <h3 class="gm3">900<br>gms</h3>
+</div>
+  </div>
+  <center>
+    <button class="tab-button" id="button2" onclick="datasheet3()" >Record</button>
+    <!-- <button class="tab-button" onclick="tableSecond()">Record</button> -->
+  </center>
+  <div id="table">
+
+    <h2>Data Sheet</h2>
+    <h3 style="margin-left:10%;">Area of Tank (A) = 2500 cm<sub>2</sub></h3>
+    <h3 style="margin-left:10%;">Unit weight of water (w) = 1 gm/cm<sub>3</sub></h3>
+    <h3 style="margin-left:10%;">Water level without pontoon Y<sub>1</sub>=16.9cm</h3>
+    <h3 style="margin-left:10%;">Water level without pontoon Y<sub>2</sub>=21cm</h3>
+    
+    <h3 style="color:red; margin-left:10%; margin-bottom:50px;">NOTE: The negative signs in the recorded values is only to depict direction from origin. It should not be used for calculation purpose.</h3>
+
+
+    <table id="tab">
+      <tr>
+        <th  >SNo.</th>
+        <th  >Reading on Tank <br>pontoon Y<sub>2</sub>cm</th>
+        <th >mass of pontoon <br>W<sub>c</sub>=(Y<sub>2</sub>-Y<sub>1</sub>)Aw gm</th>
+       
+        <th >Unbalanced mass<br> W<sub>1</sub>gm/cm<sup>3</sup></th>
+        <th >Angle of heel<br>&Theta; degree</th>
+        <th >Distance of <br>unbalanced mass Z<sub>l</sub>cm</th>
+        <th >Metacentric height<br> GM=(W<sub>1</sub>Z)/(W<sub>c</sub>+W<sub>1</sub>tan &theta;)</th>
+    
+
+
+      </tr>
+     
+
+      <tr>
+        <td  id="sno"></td>
+        <td  id="y2"> </td>
+       
+        <td  id="wc"> </td>
+        <td  id="w1"> </td>
+        <td  id="degree"> </td>
+        <td  id="Zl"> </td>
+        <td  id="h"><input type="text" placeholder="Enter calculated value"> </td>
+        
+       
+      </tr>
+    </table>
+    <br /><br />
+
+
+
+  </div>
+  <script src="js/record1.js"></script>
+</body>
+</html>

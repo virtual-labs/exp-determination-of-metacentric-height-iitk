@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container h2{
+   
+    padding-top: 40px;
+    font-size: 40px;
+    text-decoration: underline;
+    
+   
+    color: crimson;
+}
+
+.struct{
+    height: 800px;
+    width: 730px;
+    border: 2px black solid;
+    top: 25px;
+    left: 350px;
+    position: relative;
+    background-size: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.initial{
+   
+    margin-top: 42px;
+    height: 719px;
+}
+
+.arrow{
+  position: absolute;
+  left:120px;
+  top:400px;
+}
+.y1{
+  position: absolute;
+  left:320px;
+  top:500px;
+}
+.gm{
+  position: absolute;
+  left:155px;
+  top:205px;
+  font-size:10.9px;
+}
+.gm1{
+  position: absolute;
+  left:220px;
+  top:430px;
+  font-size:10.9px;
+  rotate: -30deg;
+}
+.gm2{
+  position: absolute;
+  left:255px;
+  top:400px;
+  font-size:10.9px;
+}
+.gm3{
+  position: absolute;
+  right:275px;
+  top:410px;
+  font-size:10.9px;
+  rotate:20deg;
+}
+.gm4{
+  position: absolute;
+  right: 222px;
+  top: 437px;
+  font-size: 10.9px;
+  rotate: 4deg;
+}
+.buttons{
+    position: absolute;
+    /* top: 125px; */
+    bottom: 378px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.grp1{
+    position: relative;
+    right: 40px;
+    top: 17px;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.grp2{
+    position: relative;
+    right: -27px;
+    top: 17px;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+
+#table {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    
+  }
+
+  td,
+  th {
+    border: 1px solid #0a0a0a;
+    text-align: center;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #c6fff3;
+  }
+  #table h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0a0a0a;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .tab-button {
+    margin-top: 2rem;
+    background-color: cadetblue;
+    border: none;
+    color: darkmagenta;
+    width: 8rem;
+    height: 3rem;
+    border: 1px solid black;
+  }
+  .tab-button:hover {
+    background: cornflowerblue;
+    color: black;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+ #quest{
+   /*visibility: hidden;*/
+   position: absolute;
+  background-color: khaki!important;
+  left: 500px;
+  border: 2px black solid;
+  z-index:1;
+ } 
