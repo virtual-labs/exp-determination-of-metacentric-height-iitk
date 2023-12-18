@@ -32,6 +32,50 @@
     margin-top: 42px;
     height: 719px;
 }
+
+.arrow{
+  position: absolute;
+  left:120px;
+  top:400px;
+}
+.y1{
+  position: absolute;
+  left:320px;
+  top:500px;
+}
+.gm{
+  position: absolute;
+  left:155px;
+  top:205px;
+  font-size:10.9px;
+}
+.gm1{
+  position: absolute;
+  left:220px;
+  top:430px;
+  font-size:10.9px;
+  rotate: -30deg;
+}
+.gm2{
+  position: absolute;
+  left:255px;
+  top:400px;
+  font-size:10.9px;
+}
+.gm3{
+  position: absolute;
+  right:275px;
+  top:410px;
+  font-size:10.9px;
+  rotate:20deg;
+}
+.gm4{
+  position: absolute;
+  right: 222px;
+  top: 437px;
+  font-size: 10.9px;
+  rotate: 4deg;
+}
 .buttons{
     position: absolute;
     /* top: 125px; */
