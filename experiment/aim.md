@@ -1,1 +1,1 @@
-### To determine experimentally the metacentric height of a flat bottomed pontoon.
+To determine determine Metacentric Height of a given body

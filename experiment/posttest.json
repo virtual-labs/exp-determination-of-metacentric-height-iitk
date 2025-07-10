@@ -2,15 +2,15 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "1. The metacentric height of a floating body is?",
+      "question": "1. If a ship's metacentric height is increased, it will:",
       "answers": {
-        "a": "The distance between metacentre and centre of buoyancy.",
-        "b": "The distance between centre of buoyancy and centre of gravity.",
-        "c": "The distance between metacentre and centre of gravity",
-        "d": "None of the above"
+        "a": "Become more stable and roll faster.",
+        "b": "Become less stable and roll slower.",
+        "c": "Become more stable and roll slower.",
+        "d": "Become less stable and roll faster. "
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1",
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
@@ -19,15 +19,15 @@
       "difficulty": "beginner"
     },
     {
-      "question": "2. Which of the following is not a term used for equilibrium of floating and submerged bodies?",
+      "question": "2. The metacentric height is affected by:",
       "answers": {
-        "a": "Centre of gravity",
-        "b": "Centre of buoyancy",
-        "c": "Momentum point",
-        "d": "Metacentre"
+        "a": "Only the shape of the floating body.",
+        "b": "Only the density of the fluid.",
+        "c": "The shape of the floating body and the density of the fluid.",
+        "d": "The weight of the floating body."
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1",
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
@@ -36,66 +36,15 @@
       "difficulty": "beginner"
     },
     {
-      "question": "3. A piece of metal of specific gravity 3.4 floats in mercury of a specific gravity 13.6. What fraction of its volume is under Mercury?",
+      "question": "3. For a rectangular pontoon, if the center of gravity is below the center of buoyancy, the metacentric height will be:",
       "answers": {
-        "a": "0.5",
-        "b": "Full",
-        "c": "0.25",
-        "d": "0.75"
+        "a": "Positive",
+        "b": "Negative",
+        "c": "Zero",
+        "d": "Indeterminate"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "4. When a body floating in a liquid is displayed slightly it oscillates about __________.",
-      "answers": {
-        "a": "Centre of gravity of body.",
-        "b": "Centre of pressure",
-        "c": "Metacentre",
-        "d": "None of the above"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "5. Which of the following conditions is used to determine the stable equilibrium of all partially submerged floating bodies?",
-      "answers": {
-        "a": "Centre of the AN buoyancy must be above the centre of gravity.",
-        "b": "Centre of buoyancy must be below the centre of gravity",
-        "c": "Metacentre must be at the higher level than the centre of gravity",
-        "d": "Metalcentre must be at a lower level than the centre of gravity"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "6. A body of specific weight W1 floats on a liquid of specific weight W2? Then the ratio of the volume of the object above the liquid to its volume is",
-      "answers": {
-        "a": "(W2 - W1)/W2.",
-        "b": "W2/(W2 - W1)",
-        "c": "(W2 - W1 )/ W1",
-        "d": "W1/( W2- W1)"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1",
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
@@ -104,15 +53,15 @@
       "difficulty": "beginner"
     },
     {
-      "question": "7. A piece of metal of specific gravity 7 floats in Mercury of a specific gravity 13.6. What fraction of its volume is under Mercury?",
+      "question": "4. If the metacentric height is zero, the floating body is in:",
       "answers": {
-        "a": "0.5",
-        "b": "0.4",
-        "c": "0.515",
-        "d": "0.2"
+        "a": "Stable equilibrium.",
+        "b": "Unstable equilibrium.",
+        "c": "Neutral equilibrium.",
+        "d": "None of the above"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1",
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
@@ -121,39 +70,21 @@
       "difficulty": "beginner"
     },
     {
-      "question": "8. Metacentric height is the distance between",
+      "question": "5. In warships and racing yachts, the metacentric height is generally:",
       "answers": {
-        "a":"Water surface and centre of pressure",
-        "b": "Meta centre and centre of gravity",
-        "c":"Metacentre and centre of buoyancy.",
-        "d": "Metacentre and water surface"
+        "a": "Smaller than other categories of ships.",
+        "b": "Larger than other categories of ships.",
+        "c": "The same as other categories of ships.",
+        "d": "Not a relevant factor."
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1",
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    },
-    {
-      "question":"For the stability of a floating body the",
-        "answers":{
-          "a":"Centre of buoyancy must coincide with the centre of gravity",
-          "b":"Centre of buoyancy must be above the centre of gravity",
-          "c":"Centre of gravity must be above the centre of buoyancy",
-          "d": "Metacentre must be above the centre of gravity"
-        },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "d",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
-
   ]
 }

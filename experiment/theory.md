@@ -1,25 +1,16 @@
-<b>Buoyancy</b>: When a body is immersed in a fluid either wholly of partially, it is buoyed or lifted up by a force, which is equal to the weight of fluid displaced by the body.<br><br>
+For a body to be in equilibrium on the liquid surface the two forces gravity force (F<sub>g</sub>) and buoyant force (F<sub>b</sub>) must lie in the same vertical line. If the point M is above G, the floating body will be in stable equilibrium. If slight angular displacement is given to the floating body in clockwise direction, the center of buoyancy shifts from B to B1 such that the line of action of F<sub>b</sub> through B1 cuts the axis at M, which is called the meta – center and the distance GM is called the meta-centric height. The buoyant force F<sub>b</sub> through B1 and weight w through G constitute a couple acting in anti- clockwise direction and thus bringing the floating body in the original position <br>
 
-<b>Centre of Buoyancy</b>: The point of application of the force of buoyancy on the body is known as the centre of buoyancy. It is always the centre of gravity of the volume of fluid displaced.<br><br>
+<img src = "images/img_1.png"><br>
+ 
+Metacentre is the point, where the line of buoyant force and the perpendicular passing through the centre of gravity intersect.  Formula used is:<br>
 
-<b>Metacentre:</b> Figure shows a body floating in a liquid in a state of equilibrium. When it is given a small angular displacement, it starts oscillating about some point M. This point, about which the body oscillating, it is called metacentre.<br><br> 
+<img src = "images/img_2.png"><br>
 
-The metacentre may also be defined as a point of intersection of the axis of body passing through centre of gravity G and original centre of buoyancy B and a vertical line passing through the centre of buoyancy B1 of the tilled position of the body.<br><br>
-<img src="images/pic.png"/><br><br>
-The experimental set up consists of a pontoon (flat bottomed vessel) which is allowed of float in a M.S. tank having a transparent side. Removable steel strips are placed in the model for the purpose of changing the weight of the vessel. By means of a pendulum (consisting of a weight suspended to a longer pointer), the angle of tilt θ can be measured on a graduated arc. For tilting the ship model a cross bar with two movable hangers is fixed on the model. Pendulum and graduated arc are suitably fixed at the centre of the cross bar.<br><br>
+Where,<br>
+GM = metacentric height in mm, <br>
+w is the mass of the slider in kg, <br>
+x is the distance to the movable weight from the central position in mm, <br>
+W is the mass of the trough and the slider in kg, <br>
+θ is the angle of inclination
 
-<b>Determination of Metacentric Height</b><br><br>
-A known weight W1 is shifted by a distance Z across the axis of tilt. The change in momentum due to this shift is W1 Z. Let the angle of tilt be θ. The change in moment due to this tilt is equal to (Wc + W1) GM tanθ.<br><br>
-
-<img src="images/height.png"/><br><br>
-
-W<sub>c</sub> = weight of the vessel<br>
-W<sub>1</sub> = weight of unbalanced mass<br>
-Z = distance of the unbalanced mass from the centre of the cross bar.<br>
-
-<img src="images/res.png"/><br><br>
-<b>DATA</b><br><br>
-
-Area of Tank (A) = 2500 cm<sup>2</sup><br>
-Unit weight of water (w) = 1 gm/cm<sup>3</sup>
 
