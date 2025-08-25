@@ -1,0 +1,209 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(images/background.png);
+  height: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header {
+  border: 1px solid black;
+  background-color: rgba(207, 207, 226, 0.803);
+  height: 4vmax;
+  width: 100vmax;
+  position: absolute;
+  display: flex;
+  justify-content: first baseline;
+  align-items: center;
+}
+
+.footer {
+  background-image: url("images/background.png");
+  background-size: cover; /* Ensures the image scales to cover the footer */
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-attachment: fixed; /* Keeps the background fixed during scrolling */
+  background-position: center; /* Centers the background image */
+  min-height: 100vh; /* Ensures the footer occupies the full viewport height */
+  display: flex; /* Flexbox for content alignment */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  padding: 20px;
+  color: white; /* Text color for visibility */
+}
+
+#ins {
+  color: black;
+  font-size: 2vw;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 1%;
+}
+
+#text {
+  font-size: 1.5vw;
+  font-weight: 100;
+  color: blue;
+  padding: 1%;
+}
+
+#button {
+  position: absolute;
+  border-radius: 10%;
+  padding: 0.5%;
+  font-size: 1vw;
+  left: 90%;
+  top: 90%;
+  border: none;
+  background-color: rgb(200, 123, 136);
+  box-shadow: 1px 1px 0px 0.5px;
+  font-weight: 1000;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.table-container {
+  position: relative;
+  top: -9px;
+  gap: 100px; /* Take the full width of the screen */
+  height: auto;
+}
+
+.items {
+  position: relative;
+  top: 140px; /* Adjust based on the table's position in the background image */
+  left: -5; /* Move slightly inwards from the screen edges */
+  width: 90%;
+  display: flex;
+  justify-content: space-between; /* Spread them evenly across the table */
+  align-items: center;
+}
+
+#watertank {
+  width: 100%; /* Increased size (double the previous width) */
+  height: 544px; /* Align with the table's surface */
+  transition: transform 1s ease, top 1s ease, left 1s ease;
+}
+
+#pontoon {
+  position: relative;
+  margin-top: 75px;
+  width: 75%; /* Increased size (double the previous width) */
+  height: 260px; /* Align with the table's surface */
+  cursor: pointer;
+  transition: transform 1s ease, top 1s ease, right 1s ease;
+  transform-origin: center;
+  pointer-events: auto;
+  
+}
+ #pontoon.rotate {
+  pointer-events: none; /* Disable clicks */
+  transform: rotate(90deg); /* Total rotation to 120deg (90 + 30) */
+}
+.scale {
+  position: relative;
+  top: 80px;
+  left: 125px;
+}
+#scale {
+  /* position: absolute; */
+  /* bottom: 50px; Adjust based on your layout */
+  /* right: 100px; Adjust based on your layout */
+  /* transition: all 1s ease; Smooth transitions */
+  /* transform-origin: center center; */
+  width: 69%;
+  height: 90%;
+  cursor: pointer;
+}
+#level {
+  position: absolute;
+  bottom: 249px;
+  right: -163px;
+  font-size: 1.5rem;
+  color: #333;
+  background-color:  rgba(255, 255, 255, 0.8);
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: block;
+}
+#level1{
+  position: absolute;
+  bottom: 250px;
+  right: 100px;
+  font-size: 1.5rem;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: block;
+  transition: all 1s ease;
+}
+#weight {
+  opacity: 0; /* Initially hidden */
+  position: absolute;
+  top: 263px;
+  left: 632px;
+  width: 54px;
+  height: auto;
+  transition: transform 1s ease, top 1s ease, left 1s ease;
+  cursor: pointer; /* Fade-in effect */
+}
+ 
+#weight.fixed {
+      pointer-events: none; /* Disable clicks */
+      transform: rotate(90deg); /
+    }
+
+#moveButton {
+      display: none; /* Hide the button initially */
+      position: absolute; /* Absolutely position the button */
+      top: 215px; /* Adjust as needed */
+      left:587px; /* Center horizontally */
+      border-radius: 10px;
+      background-color: #efd4d8f6;
+      transform: translateX(-50%); /* Center alignment correction */
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #protractor {
+  opacity: 0; /* Initially hidden */
+  position: absolute;
+  top: 292px;
+  left: 625px;
+  width: 116px;
+  height: auto;
+  transition: transform 1s ease, top 1s ease, left 1s ease;
+  cursor: pointer; /* Fade-in effect */
+}
+ #start{
+    position:absolute;
+    border-radius: 10%;
+    padding: 0.5%;
+    font-size: 1vw;
+    left: 1375px;
+    top: 521px;
+    border: none;
+    z-index: 10;
+    background-color: rgb(6, 255, 247);
+    box-shadow: 1px 1px 0px 0.5px;
+    font-weight: 1000;
+    font-family: 'Times New Roman', Times, serif;
+    animation: vibrate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+#start:active{
+    scale: 0.9;
+    transition: all ease 0.2s;
+}
+
