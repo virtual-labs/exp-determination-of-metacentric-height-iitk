@@ -1,55 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Experiment : Metacentric-height </title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Determination of Metacentric Height</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-   <center> <h2>
-     Experiment : Determination-Of-Metacentric-Height
-    </h2></center>
-<div class="struct">
- 
-  <img src="images/initial.png" alt="" width="730" class="initial">
- 
-  <h3 class="y1">Pontoon</h3>
-  <h3 class="gm">900<br>gms</h3>
-  <div class="buttons">
-    <div class="grp1">
-      <a href="lab1.html" >
-      <button style="border-radius: 5px; background: yellow; font-weight: bold;" id="mybtn1">
-        Click to put <br>Weight Here
-            </button>
-          </a>
-          <a href="lab2.html" >
-            <button style="border-radius: 5px; background: yellow; font-weight: bold;" id="mybtn2">
-              Click to put <br>Weight Here
-            </button>
-          </a>
-    </div>
-   <div class="grp2">
-    
+    <main>
+        <!-- Header Section -->
+        <div class="header" id="header">
+            <h1 id="ins">Instruction: Click on the start button</h1>
+        </div>
 
-    <a href="lab3.html" >
-    <button style="border-radius: 5px; background: yellow; font-weight: bold;" id="mybtn3">
-      Click to put <br>Weight Here
-          </button>
-      </a>
-      <a href="lab4.html" >
-          <button style="border-radius: 5px; background: yellow; font-weight: bold;" id="mybtn4">
-            Click to put <br>Weight Here
-          </button>
-       </a>
-   </div>
-    
-  </div>
-</div>
-  </div>
+        <!-- Footer section -->
+         <div class="footer">
+            <div class="table-container">
+                <div class="items">
+                    <img id="watertank" src="images/wt.png" alt="watertank">
+                    <img id="pontoon" src="images/pontoon.png" alt="pontoon">
+                    <button id="moveButton" onclick="moveWeight()">Move</button>
+                     <div class="scale">
+                        <img id="scale" onclick=" firstmoveScale()" src="images/scale.png" alt="scale">
+                    </div>
+                    <img id="weight" src="images/weight.png" alt="weight">
+                    <img id="protractor" onclick="moveProtractor()" src="images/protractor.png" alt="protractor">
+                    <div id="level" style="display: none;">Water Level: 0 cm</div>
+                    <div id="level1" style="display: none;">Water Level: 0 cm</div>
+                </div>
+                
+            <button id="start" onclick="start()" style="visibility: visible;" >START</button>
+            </div>
+        </div>
 
+    </main>
 
+    <!-- JavaScript -->
+    <script src="script/start.js"></script>
+    <script src="script/step1.js"></script>
+    <script src="script/step2.js"></script>
+    <script src="script/step3.js"></script>
+    <script src="script/step4.js"></script>
+    <script src="script/step5.js"></script>
+    <script src="script/step6.js"></script>
+    <script src="script/step7.js"></script>
 </body>
 </html>
