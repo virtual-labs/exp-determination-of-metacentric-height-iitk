@@ -109,12 +109,13 @@ function showCalculator() {
 
         const vol = (l * b)*(f-i);
 
-        resultElement.textContent = `Voume displaced is ${vol}cm^3`;
+        resultElement.textContent = `Volume displaced is ${vol}cm^3`;
     });
 
     // Event listener for finish button
     document.getElementById("finishButton").addEventListener("click", function() {
         volcalculator.style.opacity = '0'; // Fade out
+         startbutton.style.visibility = "visible";
         setTimeout(() => {
             volcalculator.remove();
              setTimeout(() => {

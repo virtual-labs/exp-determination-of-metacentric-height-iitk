@@ -3,15 +3,13 @@ const level1 = document.getElementById("level1"); // Ensure this exists in your 
 const ins = document.getElementById("ins"); // Ensure this exists in your HTML
 const watertank = document.getElementById("watertank"); // Ensure this exists in your HTML
 
-
 function movePontoon() {
-   const insText = instructions.textContent;
+  const insText = instructions.textContent;
 
-   // Allow only at STEP 2
+  // Allow only at STEP 2
   if (!insText.includes("STEP 2")) {
     return; // Do nothing if instruction is not STEP 1 or STEP 3
   }
-  
   // Move the pontoon upward
   pontoon.style.transition = "all 1s ease";
   pontoon.style.transform = "translateY(-200px)";
@@ -48,7 +46,7 @@ function movePontoon() {
           pontoon.style.transition = "all 0.5s ease";
           watertank.style.transition = "all 0.5s ease";
           pontoon.style.transform = "translate(-440px, -100px)";
-          startbutton.style.visibility="visible";
+          startbutton.style.visibility = "visible";
           // level1.style.transform = "translateY(-20px)"; // Adjust based on your layout
 
           // Show the calculator after stabilization
