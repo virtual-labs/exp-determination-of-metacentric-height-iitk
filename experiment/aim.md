@@ -1,1 +1,1 @@
-### Aim of the experiment
+To determine determine Metacentric Height of a given body

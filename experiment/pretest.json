@@ -2,15 +2,49 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "1. The metacentric height of a floating body is:",
+        "answers": {
+          "a": "The distance between the center of gravity and the center of buoyancy.",
+          "b": "The distance between the center of gravity and the metacentre.",
+          "c": "The distance between the center of buoyancy and the metacentre.",
+          "d": "The radius of curvature of the locus of the center of buoyancy."
+        },
+      "explanations": {
+        "a": "Explanation 1 ",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. The metacentric height is a measure of:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "The weight of the floating body.",
+        "b": "The stability of the floating body.",
+        "c": "The volume of the floating body.",
+        "d": "The density of the fluid."
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. For stable equilibrium of a floating body, the metacentric height (GM) should be:",
+      "answers": {
+        "a": "GM > 0",
+        "b": "GM = 0",
+        "c": "GM < 0",
+        "d": "GM = ∞"
+      },
+      "explanations": {
+        "a": "Explanation 1",
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
@@ -19,15 +53,32 @@
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+      "question": "4. In a completely submerged body, the metacentric height is:",
+      "answers":{
+        "a": "Always positive.",
+        "b": "Always negative.",
+        "c": "Always zero.",
+        "d": "Can be positive, negative, or zero depending on the body's shape and density."
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. The metacentre is defined as:",
+      "answers": {
+        "a": "The point where the weight of the body acts.",
+        "b": "The point where the buoyancy force acts.",
+        "c": "The point of intersection of the line of action of the buoyancy force before and after a small angular displacement.",
+        "d": "The center of gravity of the body."
+      },
+      "explanations": {
+        "a": "Explanation 1",
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
