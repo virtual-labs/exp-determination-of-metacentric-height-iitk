@@ -1,0 +1,65 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. If a ship's metacentric height is increased, it will:",
+      "answers": {
+        "a": "Become more stable and roll faster.",
+        "b": "Become less stable and roll slower.",
+        "c": "Become more stable and roll slower.",
+        "d": "Become less stable and roll faster. "
+      },
+     
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. The metacentric height is affected by:",
+      "answers": {
+        "a": "Only the shape of the floating body.",
+        "b": "Only the density of the fluid.",
+        "c": "The shape of the floating body and the density of the fluid.",
+        "d": "The weight of the floating body."
+      },
+      
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. For a rectangular pontoon, if the center of gravity is below the center of buoyancy, the metacentric height will be:",
+      "answers": {
+        "a": "Positive",
+        "b": "Negative",
+        "c": "Zero",
+        "d": "Indeterminate"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. If the metacentric height is zero, the floating body is in:",
+      "answers": {
+        "a": "Stable equilibrium.",
+        "b": "Unstable equilibrium.",
+        "c": "Neutral equilibrium.",
+        "d": "None of the above"
+      },
+      
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. In warships and racing yachts, the metacentric height is generally:",
+      "answers": {
+        "a": "Smaller than other categories of ships.",
+        "b": "Larger than other categories of ships.",
+        "c": "The same as other categories of ships.",
+        "d": "Not a relevant factor."
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}
