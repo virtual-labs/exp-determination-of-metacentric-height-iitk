@@ -7,6 +7,7 @@ function moveWeightAndRotate(targetPosition, delay = 100) {
   const pontoon = document.querySelector("#pontoon"); // Ensure the pontoon element exists
   const moveButton = document.querySelector("#moveButton"); // Ensure the moveButton element exists
   const instruction = document.querySelector("#ins"); // Ensure the h1 element exists
+  const xArrow = document.getElementById("xArrow");
 
   if (!weight || !pontoon) {
     console.error("Required elements not found");
@@ -15,6 +16,7 @@ function moveWeightAndRotate(targetPosition, delay = 100) {
 
   // Move the weight element
   setTimeout(() => {
+     xArrow.style.display = "none";
     weight.style.left = `${targetPosition}px`; // Set the new position dynamically
 
     // Add rotation after movement
