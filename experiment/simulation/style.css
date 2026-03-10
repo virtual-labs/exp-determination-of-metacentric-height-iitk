@@ -218,3 +218,11 @@ body {
     transition: all ease 0.2s;
 }
 
+#xArrow {
+  position: absolute;
+  top: 115px;      /* adjust if needed */
+  left: 268px;     /* fixed position */
+  width: 150px;
+  display: none;   /* hidden initially */
+  pointer-events: none;
+}
