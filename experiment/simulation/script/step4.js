@@ -1,5 +1,7 @@
 const weight = document.getElementById('weight');
 const moveButton = document.getElementById('moveButton');
+const xArrow = document.getElementById("xArrow");
+
 
 
     function animateImage() {
@@ -30,6 +32,7 @@ const moveButton = document.getElementById('moveButton');
         // Make the image fixed and unclickable
         weight.classList.add('fixed');
         weight.removeEventListener('click', handleClick);
+         xArrow.style.display = "block";
 
            // Change the instruction text after completion
         setTimeout(() => {
